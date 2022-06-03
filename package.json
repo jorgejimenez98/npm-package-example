@@ -1,0 +1,19 @@
+{
+  "name": "useless-calculator-1998",
+  "version": "1.0.1",
+  "main": "dist-node/index.js",
+  "description": "A first npm package for tests",
+  "keywords": ["useless"],
+  "license": "MIT",
+  "author": "Jorge Jimenez Diaz",
+  "contributors": ["Jorge Jimenez Diaz", "Luis Ballagas"],
+  "browser": "dist-browser/index.js",
+  "scripts": {
+    "build-browser": "npx tsc src/index.ts --outdir dist-browser --module ES6",
+    "build-node": "npx tsc src/index.ts --outdir dist-node",
+    "build": "npm run build-browser & npm run build-node"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}

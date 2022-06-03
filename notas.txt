@@ -1,0 +1,6 @@
+npm init --y 
+npx tsc src/index.ts --module ES6 // Compilar de TS a ES6
+
+npm login
+
+npm publish --access public // Por cada cambio hay que actualiza la version
